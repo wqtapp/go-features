@@ -1,4 +1,4 @@
-package go_receiver
+package _interface
 //定义接口
 type IMethod interface {
 	ValueMethod(name1 string)
@@ -15,13 +15,4 @@ func (sp StructParent) ValueMethod(name1 string) {
 
 func (sp *StructParent) PointerMehtod(name2 string) {
 	sp.Name = name2
-}
-
-
-type StructChild struct {
-	StructParent
-}
-
-type PointerStructChild struct {
-	*StructParent
 }
